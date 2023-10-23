@@ -49,6 +49,7 @@ namespace WPF_withListBox
                 // Enable clicking the button when a specific item is selected
                 if (selectedContent == "Temp")
                 {
+                    // if selectedContent or Selected name of the sensor is Temp
                     Button.IsEnabled = true;
                     RadioButtonOption.IsChecked = false;
                     RadioButtonOption.IsEnabled = false;
