@@ -23,6 +23,19 @@ namespace WPF_withListBox
         public MainWindow()
         {
             InitializeComponent();
+
+            // Create a List of items
+            List<string> manufacturing_city = new List<string>
+            {
+                "Tromso",
+                "Bergen",
+                "Oslo",
+                "Kristiansand",
+                "Gjøvik"
+            };
+
+            // Set the ComboBox's item source to the List
+            ComboBoxTH.ItemsSource = manufacturing_city;
         }
 
         private void SensorListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -69,6 +82,17 @@ namespace WPF_withListBox
         private void RadioButton_Checked_Handler(object sender, RoutedEventArgs e)
         {
             MessageWindow.Text = "Radio Button is Checked!!";
+        }
+
+        // Handler method for ComboBoxTX Selection Changed Event
+        private void ComboBoxTH_SelectionChanged_Handler(object sender, SelectionChangedEventArgs e)
+        {
+            // Make sure that it is not null
+            if (ComboBoxTH.SelectedItem != null)
+            {
+                string selectedCity = (string) ComboBoxTH.SelectedItem;
+                MessageWindow.Text = "Manufacturing City is "+ selectedCity;
+            }
         }
     }
 }

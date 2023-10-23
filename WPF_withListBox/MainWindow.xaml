@@ -16,6 +16,9 @@
         <TextBlock x:Name="MessageWindow" HorizontalAlignment="Left" Height="92" Margin="138,41,0,0" TextWrapping="Wrap" Text="Select A Sensor form the List" VerticalAlignment="Top" Width="511" FontSize="20"/>
         <Button x:Name="Button" Content="OK" HorizontalAlignment="Left" Margin="90,243,0,0" VerticalAlignment="Top" Height="32" Width="125" FontSize="20"  IsEnabled="False" Click="Button_Click_Handler"/>
         <RadioButton x:Name="RadioButtonOption" Content="RadioButton" HorizontalAlignment="Left" Margin="90,173,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" Checked="RadioButton_Checked_Handler"/>
+        <ComboBox x:Name="ComboBoxTH" HorizontalAlignment="Left" Margin="629,87,0,0" VerticalAlignment="Top" Width="120" FontSize="20" SelectionChanged="ComboBoxTH_SelectionChanged_Handler"/>
+
+
 
 
 
